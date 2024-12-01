@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    background-image: url('images (4).jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 100vh;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+    
+}
+
+canvas {
+    display: block;
+}
+
+
+
+
+img {
+    width: 300px; /* عرض الصورة الواحدة */
+    height: 300px; /* ارتفاع الصورة الواحدة */
+    border-radius: 8px;
+    margin-right: 2px; /* هامش بين الصور */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+hr {
+    border: none;
+    border-top: 2px solid black; /* لون الخط وسمكه يمكن تعديلهما */
+    margin: 0;
+  }
+ 
+  .center-text {
+    text-align: center; /* توسيط النص في وسط العنصر */
+  }
+  .container {
+    max-width: 1200px;
+    width: 95%;
+  }
+  .slider-wrapper {
+    position: relative;
+  }
+  .slider-wrapper .slider-button {
+    position: absolute;
+    top:50%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slider-button:hover {
+    background: #444;
+  }
+  .slider-wrapper .slider-button#prev-slide {
+    left: -20px;
+    display: none;
+}
+  .slider-wrapper .slider-button#next-slide {
+    right: -20px;
+  }
+.slider-wrapper .image-list{
+    display: grid;
+    gap:18px;
+    font-size: 0;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10,1fr);
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+.slider-wrapper .image-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+.container .slidr-scrollbar{
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slidr-scrollbar .scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius:4px ;
+
+}
+.slidr-scrollbar:hover .scrollbar-track{
+    height: 4px;
+
+}
+.slidr-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 100px; /* Replace with your desired height value */
+    width: 50%;
+    background: #000;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slidr-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slidr-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+

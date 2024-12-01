@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكة</title>
+
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url('images.jpg'); /* تعيين صورة الخلفية */
+            background-size: cover; 
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #000; /* تغيير لون النص */
+        }
+
+        .city-info {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+
+        .icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: #f08080; /* لون خلفية الأيقونات */
+            border-radius: 50%;
+            line-height: 100px;
+            font-size: 24px;
+            color: #fff;
+            transition: all 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+            background-color: #ff1493; /* تغيير لون الخلفية عند التحويل */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #f00;
+            transform: scale(1.05);
+        }
+
+        .icon:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="city-info">
+        <h3 >مكة المكرمة هي مدينة مقدسة في المملكة العربية السعودية،ويبلغ إجمالي عدد سكان  (8,021,463) نسمة، تُعتبر مركزًا للعبادة الإسلامية وتجذب مسلمين من جميع أنحاء العالم لأداء العمرة والحج. بالإضافة إلى أهميتها الدينية، تعتبر مكة مركزًا حيويًا للتجارة والسياحة، وتحتضن العديد من المعالم التاريخية والأثرية المهمة، مثل جبل النور وغار حراء، إلى جانب المتاحف والمعارض التي تروي قصة التاريخ الإسلامي وزوار المدينة عبر العصور.
+        الملبس: يتبع سكان مكة المكرمة غالبًا اللباس التقليدي الإسلامي، مثل الثوب الأبيض
+        المأكولات والمشروبات: تتنوع المأكولات بين المأكولات الشعبية المحلية  المأكولات الشهيرة الكبسة </h3>
+      
+        <div class="icons">
+            <div class="icon" id="hotels">فنادق</div>
+            <ul>
+                <li><a href="https://www.booking.com/hotel/sa/hilton-suites-makkah.ar.html">فندق أجنحة هيلتون</a></li>
+                <li><a href="https://www.booking.com/hotel/sa/park-inn-by-radisson-makkah-azizyah.ar.html?aid=304142&label=gen173nr-1FCAMoxAE4rgJIAVgEaMQBiAEBmAEBuAEXyAEM2AEB6AEB-AECiAIBqAIDuAL86oWxBsACAdICJDM5MjJlZjhmLWI5OTQtNDA4Zi1iZGY3LWFjNTlkMjc3OTQxM9gCBeACAQ">فندق بارك إن راديسون العزيزية</a></li>
+            </ul>
+            <div class="icon" id="shopping">تسوق</div>
+            <ul>
+                <li><a href="https://maps.app.goo.gl/MS21NhJN4iX26Tx89?g_st=iw">سيتي سنتر مول </a></li>
+                <li><a href="https://maps.app.goo.gl/MS21NhJN4iX26Tx89?g_st=iw">الحجاز مول</a></li>
+            </ul>
+            <div class="icon" id="restaurants">مطاعم</div>
+            <ul>
+                <li><a href="https://maps.app.goo.gl/Euo8CfMAwSir6jPAA?g_st=iw">مطعم أبو أسيد</a></li>
+                <li><a href="https://maps.app.goo.gl/QA1ynkjunM85oxLY7?g_st=iw"> مطعم مشويات الحمراء</a></li>
+            </ul>
+            <div class="icon" id="cafes">كافيهات</div>
+            <ul>
+                <li><a href="https://maps.app.goo.gl/iUAe3pDTJrKfwsfn6?g_st=iw">ام بي كوفي</a></li>
+                <li><a href="https://maps.app.goo.gl/Kkvs8VRGArCBBXrLA?g_st=iw">ستاي كافيه الشوقية </a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
